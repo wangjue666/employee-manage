@@ -16,11 +16,11 @@ public class PC implements Equipment {
 
     @Override
     public String getDescription() {
-        return model + '(' + display + ')';;
+        return model + '(' + display + ')';
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     public void setModel(String model) {
