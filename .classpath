@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry	
+			kind="src"
+			output="bin/main"
+			path="src/com/atguigu" />
+	<classpathentry
+			kind="src"
+			output="bin/test"
+			path="src/com/atguigu">
+		<attributes>
+			<attribute
+					name="test"
+					value="true" />
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry
+			kind="lib"
+			path="lib/junit.jar"
+			exported="true" />
+	<classpathentry kind="output" path="bin"/>
+</classpath>
