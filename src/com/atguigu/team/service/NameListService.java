@@ -51,10 +51,15 @@ public class NameListService{
     }
 
     public Employee[] getAllEmployees(){
-        return null;
+        return employees;
     }
-    public Employee getEmployee(int id){
-        return null;
+    public Employee getEmployee(int id) throws TeamException{
+        for(int i=0; i< employees.length; i++){
+            if(employees[i].getId() == id){
+                return employees[i];
+            }
+        }
+        throw new TeamException("找不到指定的员工");
     }
     public Equipment createEquipment(int index){
         int type = Integer.parseInt(EQUIPMENTS[index][0]);
