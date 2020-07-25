@@ -1,4 +1,4 @@
-package project3.employee.src.com.atguigu.team.view;
+package com.atguigu.team.view;
 
 import java.util.*;
 

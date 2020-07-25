@@ -1,11 +1,12 @@
-package project3.employee.src.com.atguigu.team.service;
+package com.atguigu.team.service;
 
-public class TeamException extends Exception{
-    static final long serialVersionUID = -3387514229948L;
-    public TeamException(){
-        super();
-    }
-    public TeamException(String msg){
-        super(msg);
-    }
+public class TeamException extends Exception {
+	static final long serialVersionUID = -33875169124229948L;
+
+	public TeamException() {
+	}
+
+	public TeamException(String message) {
+		super(message);
+	}
 }

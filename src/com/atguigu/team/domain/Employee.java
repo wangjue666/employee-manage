@@ -1,10 +1,11 @@
-package project3.employee.src.com.atguigu.team.domain;
+package com.atguigu.team.domain;
 
 public class Employee {
     private int id;
     private String name;
     private int age;
     private double salary;
+
     public Employee() {
     }
 
@@ -15,8 +16,16 @@ public class Employee {
         this.salary = salary;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public int getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(int id) {
@@ -24,48 +33,27 @@ public class Employee {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getAge() {
-        return this.age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public double getSalary() {
-        return this.salary;
+        return salary;
     }
 
     public void setSalary(double salary) {
         this.salary = salary;
     }
 
-    public Employee id(int id) {
-        this.id = id;
-        return this;
+    protected String getDetails() {
+        return id + "\t" + name + "\t" + age+ "\t" +salary;
     }
 
-    public Employee name(String name) {
-        this.name = name;
-        return this;
+    @Override
+    public String toString() {
+        return getDetails();
     }
-
-    public Employee age(int age) {
-        this.age = age;
-        return this;
-    }
-
-    public Employee salary(double salary) {
-        this.salary = salary;
-        return this;
-    }
-
-  
 }

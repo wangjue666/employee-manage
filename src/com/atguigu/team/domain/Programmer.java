@@ -1,30 +1,23 @@
-package project3.employee.src.com.atguigu.team.domain;
+package com.atguigu.team.domain;
 
-import project3.employee.src.com.atguigu.team.service.Status;
+import com.atguigu.team.service.*;
 
 public class Programmer extends Employee {
     private int memberId;
-    private Status status;
+    private Status status = Status.FREE;
     private Equipment equipment;
+
     public Programmer() {
-        super();
     }
 
-    public Programmer(int id, String name, int age, double salary, Equipment equipment) {
-       super(id, name, age, salary);
-       this.equipment = equipment;
-    }
-
-    public int getMemberId() {
-        return this.memberId;
-    }
-
-    public void setMemberId(int memberId) {
-        this.memberId = memberId;
+    public Programmer(int id, String name, int age, 
+                       double salary, Equipment equipment) {
+        super(id, name, age, salary);
+        this.equipment = equipment;
     }
 
     public Status getStatus() {
-        return this.status;
+        return status;
     }
 
     public void setStatus(Status status) {
@@ -32,31 +25,31 @@ public class Programmer extends Employee {
     }
 
     public Equipment getEquipment() {
-        return this.equipment;
+        return equipment;
     }
 
     public void setEquipment(Equipment equipment) {
         this.equipment = equipment;
     }
 
-    public Programmer memberId(int memberId) {
+    public int getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(int memberId) {
         this.memberId = memberId;
-        return this;
     }
 
-    public Programmer status(Status status) {
-        this.status = status;
-        return this;
+    protected String getMemberDetails() {
+        return getMemberId() + "/" + getDetails();
     }
 
-    public Programmer equipment(Equipment equipment) {
-        this.equipment = equipment;
-        return this;
+    public String getDetailsForTeam() {
+        return getMemberDetails() + "\t程序员";
     }
 
+    @Override
+    public String toString() {
+        return getDetails() + "\t程序员\t" + status + "\t\t\t" + equipment.getDescription() ;
+    }
 }
-
-    
-   
- 
-    

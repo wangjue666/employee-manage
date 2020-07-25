@@ -1,4 +1,4 @@
-package project3.employee.src.com.atguigu.team.service;
+package com.atguigu.team.service;
 
 
 public class Data {
@@ -34,7 +34,7 @@ public class Data {
     //PC      :21, model, display
     //NoteBook:22, model, price
     //Printer :23, type, name
-    public static final String[][] EQUIPMENTS = {
+    public static final String[][] EQIPMENTS = {
         {},
         {"22", "联想T4", "6000"},
         {"21", "戴尔", "NEC17寸"},
